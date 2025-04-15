@@ -1,0 +1,17 @@
+/* Unify base font size across all pages */
+.md-typeset {
+  font-size: 0.85rem;
+}
+
+/* Standardize font size for admonitions (non-collapsible and collapsible) */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.85rem;
+}
+
+/* Slightly smaller font for code blocks */
+.md-typeset code,
+.md-typeset pre {
+  font-size: 0.75rem;
+}
+
