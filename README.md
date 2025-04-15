@@ -11,7 +11,8 @@ This repository contains the user guide and documentation for the TRACK cyclone 
 
 TRACK is an automated feature-tracking algorithm developed by Dr. Kevin Hodges at the University of Reading (UK). The codebase combines C and Fortran, and is compatible with most Linux-based systems using the Bash shell.
 
-🔍 Main Features¶
+🔍 Main Features
+
 Tracks features based on vorticity, pressure, or other fields
 Custom thresholds for intensity, displacement, and lifetime
 Outputs detailed track files and summary statistics
