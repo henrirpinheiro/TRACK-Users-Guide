@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../spatial_fields/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../../filtering_tracks/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>TRACK User’s Guide</title>
+        <title>Python Wrapper for CMIP6 - TRACK User’s Guide</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
       
       
 
@@ -39,9 +43,9 @@
       
     
     
-      <link rel="stylesheet" href="/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#python-wrapper-for-cmip6" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -71,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="TRACK User’s Guide" class="md-header__button md-logo" aria-label="TRACK User’s Guide" data-md-component="logo">
+    <a href="../.." title="TRACK User’s Guide" class="md-header__button md-logo" aria-label="TRACK User’s Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -91,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Python Wrapper for CMIP6
             
           </span>
         </div>
@@ -169,7 +178,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="TRACK User’s Guide" class="md-nav__button md-logo" aria-label="TRACK User’s Guide" data-md-component="logo">
+    <a href="../.." title="TRACK User’s Guide" class="md-nav__button md-logo" aria-label="TRACK User’s Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -187,7 +196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -247,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/obtaining_the_code/" class="md-nav__link">
+      <a href="../../obtaining_the_code/" class="md-nav__link">
         
   
   
@@ -270,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   
@@ -293,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/preparing_data/" class="md-nav__link">
+      <a href="../../preparing_data/" class="md-nav__link">
         
   
   
@@ -320,18 +329,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -347,7 +358,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Running TRACK
@@ -361,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/running_code/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -384,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/running_code/track_displacement/" class="md-nav__link">
+      <a href="../track_displacement/" class="md-nav__link">
         
   
   
@@ -407,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/running_code/rslice_rundatin/" class="md-nav__link">
+      <a href="../rslice_rundatin/" class="md-nav__link">
         
   
   
@@ -430,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/running_code/vorticity/" class="md-nav__link">
+      <a href="../vorticity/" class="md-nav__link">
         
   
   
@@ -453,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/running_code/data_preprocessing/" class="md-nav__link">
+      <a href="../data_preprocessing/" class="md-nav__link">
         
   
   
@@ -476,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/running_code/master_exec/" class="md-nav__link">
+      <a href="../master_exec/" class="md-nav__link">
         
   
   
@@ -499,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/running_code/automation/" class="md-nav__link">
+      <a href="../automation/" class="md-nav__link">
         
   
   
@@ -522,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/running_code/spatial_fields/" class="md-nav__link">
+      <a href="../spatial_fields/" class="md-nav__link">
         
   
   
@@ -542,10 +553,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/running_code/python_wrapper_cmip6/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Python Wrapper for CMIP6
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -556,6 +589,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-this-wrapper" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use This Wrapper
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation and Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -613,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/filtering_tracks/" class="md-nav__link">
+      <a href="../../filtering_tracks/" class="md-nav__link">
         
   
   
@@ -636,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/additional_fields/" class="md-nav__link">
+      <a href="../../additional_fields/" class="md-nav__link">
         
   
   
@@ -659,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/visualization/" class="md-nav__link">
+      <a href="../../visualization/" class="md-nav__link">
         
   
   
@@ -682,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lifecycle_compositing/" class="md-nav__link">
+      <a href="../../lifecycle_compositing/" class="md-nav__link">
         
   
   
@@ -705,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/cyclone_structure/" class="md-nav__link">
+      <a href="../../cyclone_structure/" class="md-nav__link">
         
   
   
@@ -773,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/utilities/" class="md-nav__link">
+      <a href="../../utilities/" class="md-nav__link">
         
   
   
@@ -796,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/troubleshooting/" class="md-nav__link">
+      <a href="../../troubleshooting/" class="md-nav__link">
         
   
   
@@ -836,6 +925,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-this-wrapper" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use This Wrapper
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation and Examples
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -847,8 +982,46 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="python-wrapper-for-cmip6">Python Wrapper for CMIP6<a class="headerlink" href="#python-wrapper-for-cmip6" title="Permanent link">&para;</a></h1>
+<p>For users interested in applying TRACK to <strong>CMIP6 simulations</strong>, the <a href="https://github.com/acse-hvs119/pyTRACK-CMIP6"><code>pyTRACK-CMIP6</code></a> repository provides a set of <strong>Python scripts and tools</strong> that simplify the process of running TRACK on large climate model datasets — especially for <strong>extratropical cyclone tracking</strong>.</p>
+<h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Wrapper scripts to automate TRACK configuration for multiple CMIP6 models or ensemble members</li>
+<li>Batch processing capabilities across historical and future experiments (e.g., SSP585)</li>
+<li>Pre-processing utilities for vorticity fields and regridding</li>
+</ul>
+<h2 id="repository">Repository<a class="headerlink" href="#repository" title="Permanent link">&para;</a></h2>
+<p>👉 <a href="https://github.com/acse-hvs119/pyTRACK-CMIP6">pyTRACK-CMIP6 on GitHub</a></p>
+<h2 id="when-to-use-this-wrapper">When to Use This Wrapper<a class="headerlink" href="#when-to-use-this-wrapper" title="Permanent link">&para;</a></h2>
+<p>Use this wrapper if you are:</p>
+<ul>
+<li>Working specifically with <strong>CMIP6 climate model outputs</strong></li>
+<li>Analyzing <strong>multi-model ensembles</strong> or large-scale simulations</li>
+<li>Interested in reproducible pipelines to generate TRACK-compatible input and process the output efficiently</li>
+</ul>
+<h2 id="documentation-and-examples">Documentation and Examples<a class="headerlink" href="#documentation-and-examples" title="Permanent link">&para;</a></h2>
+<p>Detailed instructions, including example configurations, input formats, and expected outputs, are provided in the <a href="https://github.com/acse-hvs119/pyTRACK-CMIP6#readme">repository documentation</a>.</p>
+<blockquote>
+<p><strong>Note:</strong> A functional TRACK installation is required to use this wrapper.</p>
+</blockquote>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -884,10 +1057,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
